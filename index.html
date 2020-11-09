@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quiz">
+        <div class="answer-ques">
+        <div class="heading">
+            <p>Information Technology Quiz</p>
+        </div>
+        <div class="ques1">
+            <p>1.Which one is the first fully supported 64 bit Operating System?<br>
+               a)Windows Vista<br>
+               b)MAC<br>
+               c)Linux<br>
+               d)Windows XP
+            </p>
+            <button class="btn" onclick="showAnswer('output')">SHOW ANSWER/HIDE ANSWER</button>
+        </div>
+        <div class="hide" id="output">
+            <p>Answer:(c) Linux</p>
+
+        </div>
+
+        <div class="ques2">
+            <p>2.Computer Hard Disk was invented in 1956 by?<br>
+               a)Dell<br>
+               b)Apple<br>
+               c)Microsoft<br>
+               d)IBM
+            </p>
+            <button class="btn" onclick="showAnswer('output1')">SHOW ANSWER/HIDE ANSWER</button>
+        </div>
+        <div class="hide" id="output1">
+            <p>Answer:(d) IBM</p>
+
+        </div>
+
+        <div class="ques3">
+            <p>3.Which protocol is used to send email?<br>
+               a)HTTP<br>
+               b)POP3<br>
+               c)SMTP<br>
+               d)SSH
+            </p>
+            <button class="btn" onclick="showAnswer('output2')">SHOW ANSWER/HIDE ANSWER</button>
+        </div>
+        <div class="hide" id="output2">
+            <p>Answer:(c) SMTP</p>
+
+        </div>
+
+
+        
+        </div>
+    </div>
+    </div>-
+<script>
+// var btn=document.querySelector(".btn");
+// btn.addEventListener("click",function(){
+// document.querySelector(".hide").classList.toggle("show");
+// })
+// var btn2=document.querySelector(".btn2");
+// btn2.addEventListener("click",function(){
+// document.querySelector(".hide2").classList.toggle("show2");
+// })
+function showAnswer(id){
+    var e=document.getElementById(id);
+    e.classList.toggle("show");
+}
+
+
+</script>    
+</body>
+</html>
